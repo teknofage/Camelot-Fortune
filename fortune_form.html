@@ -1,0 +1,73 @@
+<html>
+    <head></head>
+    <body>
+        <h1>Tinder for Knights of Camelot</h1>
+        <h2>Those who seek the Holy Grail (or a date) must answer me these questions eight!</h2>
+    
+    
+
+
+<form action='/fortune_results.php' method='GET'>
+    What is your name?
+    <input type='text' name='firstname'>
+    <br><br>
+
+    What is your favorite color: 
+    <input type="color" name="favcolor" value="#353dff"><br><br>
+    
+    What is the average airspeed of an unladen swallow: <br>
+    <input type= "radio" name="airspeed" value= "I-don't-know-that!"> I don't know that!<br>
+    <input type= "radio" name="airspeed" value= "African-or-European!"> What do you mean? African or European?<br>
+    <br><br>
+
+    What is your title?
+    <input list="titles" name="title">
+
+    <datalist id="titles">
+        <option value="Squire">
+        <option value="Knight">
+        <option value="Knight of the Realm">
+        <option value="Paladin">
+        <option value="Sorceror">
+        <option value="Lord/Lady">
+        <option value="King/Queen">
+    </datalist><br><br>
+    
+    Date you were knighted: <input type="date" name="knighted"><br><br>
+
+    Which reverend knights or warriors do you most identify with?<br>
+    <input type="checkbox" name="knight1" value="Britomart"> Britomart<br>
+    <input type="checkbox" name="knight2" value="Roland"> Roland<br>
+    <input type="checkbox" name="knight3" value="Tristan"> Tristan<br>
+    <input type="checkbox" name="knight4" value="Boudicca"> Boudicca<br>
+    <input type="checkbox" name="knight5" value="Odysseus"> Odysseus<br>
+    <input type="checkbox" name="knight6" value="Etienne Navarre"> Etienne Navarre<br>
+    <br>
+
+    What is your preferred drink to quaff out of grails?
+    <input list="drinks" name="drink">
+        
+    <datalist id="drinks">
+        <option value="Beer">
+        <option value="Wine">
+        <option value="Mead">
+        <option value="Elderflower Cordial">
+        <option value="Love Potion Number 9">
+        <option value="Gorilla Punch">
+    </datalist><br><br>
+
+    Which monster hast thou slain or vanquished to prove your worth?<br>
+    <select name="monsterlist" form="monsterform">
+            <option value="dragon">Dragon</option>
+            <option value="chimera">Chimera</option>
+            <option value="manticore">Manticore</option>
+            <option value="chicken">The Vicious Chicken of Bristol</option>
+            <option value="jabber">The Jabberwocky</option><br>
+            <br><br>
+
+        <br><br>
+    <input type='submit' value='Submit!'>
+</form>
+
+</body>
+</html>
