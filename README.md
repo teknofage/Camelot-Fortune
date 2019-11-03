@@ -13,3 +13,9 @@ What are the values of the URL query string? How do they correspond to what the 
 The values or the URL query string are William, %23353dff&,  African-or-European, Sorceror, 2019-10-26, Odysseus, Gorilla+Punch.
 
 They correspond to the answers given by the user to each question: respectively, to the name entered, the favorite color, the chosen answer to the question about swallow airspeed, the title given, when they were knighted, their hero, and their chosen drink.
+
+Stretch challenge question:
+
+Is there a way to pass multiple values through the URL query string for a single key? How can we do so?
+
+Yes. You need to use a Checkbox form element, which allows you to select more than one answer to a question, and therefore more than one value per key.
