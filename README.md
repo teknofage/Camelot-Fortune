@@ -3,11 +3,11 @@
 
 ![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/teknofage/camelot-fortune?sort=date&style=for-the-badge)
 
-![CircleCI](https://img.shields.io/circleci/build/github/teknofage/camelot-fortune)
+![CircleCI](https://img.shields.io/circleci/build/github/teknofage/Camelot-Fortune?style=for-the-badge)
 
 ![Docker Build Status](https://img.shields.io/docker/build/teknofage/camelot-fortune?style=for-the-badge)
 
-![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/teknofage/camelot-fortune?style=for-the-badge)
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/teknofage/Camelot-Fortune?style=for-the-badge)
 
 ![Website](https://img.shields.io/website?down_color=light%20grey&down_message=offline&style=for-the-badge&up_color=green&up_message=online&url=https%3A%2F%2Fcamelot-fortune.dev.teknofage.com)
 
