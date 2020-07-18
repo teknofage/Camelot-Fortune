@@ -1,8 +1,11 @@
 # STEP 1: Install base image. Optimized for Python.
 FROM python:3.7-slim-buster
 
+# STEP 1.5: Copy requirements.txt so we can install the versioned requirements.
+COPY requirements.txt .
+
 # STEP 2: Install required dependencies.
-RUN pip install Flask
+RUN pip install -r requirements.txt
 
 # STEP 3: Copy the source code in the current directory to the container.
 # Store it in a folder named /app.
@@ -11,12 +14,6 @@ ADD . /app
 # STEP 4: Set working directory to /app so we can execute commands in it
 WORKDIR /app
 
-COPY Pip* /app/
-
-RUN pip install --upgrade pip && \
-    pip install pipenv && \
-    pipenv install --dev --system --deploy --ignore-pipfile \
-    pip install -r requirements.txt 
 # STEP 5: Declare environment variables
 ENV FLASK_APP=app.py
 ENV FLASK_ENV=development
@@ -25,4 +22,4 @@ ENV FLASK_ENV=development
 EXPOSE 5000
 
 # STEP 7: Run Flask!
-CMD ["flask", "run", "--host=0.0.0.0"]
+CMD flask run --host=0.0.0.0
