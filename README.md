@@ -1,28 +1,81 @@
-# Fortune Form
+<!-- Headings -->
+# **Reddit Clone**
 
-Fortune Form is an app for questing knights who want to meet new people
+![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/teknofage/camelot-fortune?sort=date&style=for-the-badge)
 
-## Installation
+![Cirrus CI - Specific Branch Build Status](https://img.shields.io/cirrus/github/teknofage/camelot-fortune?style=for-the-badge)
 
-Install Python, Flask, brew
+![CircleCI](https://img.shields.io/circleci/build/github/teknofage/camelot-fortune)
 
-## Usage
+![Docker Build Status](https://img.shields.io/docker/build/teknofage/camelot-fortune?style=for-the-badge)
 
-```python
-import 
+![Website](https://img.shields.io/website?down_color=light%20grey&down_message=offline&style=for-the-badge&up_color=green&up_message=online&url=https%3A%2F%2Fcamelot-fortune.dev.teknofage.com)
 
-By entering multiple values as answers to the questions in the form, Fortune Form can deliver your personal fortune based on your personal details and answers.
+## Camelot Fortune is an API for nobles and commoners of Camelot and surrounding princedoms alike to learn their fortunes.
 
-HOMEWORK 3 DISCUSSION QUESTIONS
+___
 
-1. Describe the data contained in the API response. What can we discern about the weather in the specified city?
+⚠️ ⚠️ Disclaimer: This web application is still in development. 
+.⚠️ ⚠️ 
+___
 
-The data consists of a lot of small dictionaries containing key value pairs in the form of JSON data. We can discern from this data about San Francisco: the latitude and longitude, the description of the weather today (scattered clouds), the temperature, pressure, humidity, as well as information about the wind and sunrise and sunset times, and th time zone data.
 
-2. How would we obtain the temperature in the specified city? Describe using Python dictionary syntax. (HINT: Assume that the JSON response is stored in a variable called json_response.)
+### Table of Contents
 
-I wil use the requests.get function to send a GET request to the API. 
+* [Rationale](#Rationale)
+* [Benefits](#Benefits)
+* [Getting Started](#Getting_Started)
+* [Useful Links](#Useful_Links)
+* [Developers](#Developers)
 
-import requests
-response=requests.get(response = requests.get("http://api.openweathermap.org/data/2.5/weather?q=San+Francisco&appid=2608f679d4594364525f6c6cc2246c79", params=parameters)
-)
+
+#### Rationale
+
+This was an small API app which was then developed for deployment.
+
+
+#### Description
+
+Users can answer questions and discover their fortune.
+
+
+Frameworks: Flask 
+
+Languages: Python 3
+
+
+#### Benefits
+
+It's fun.
+
+
+#### Getting Started
+
+##Docker Installation instructions
+
+Make sure you have Docker Hub installed and running on your machine.
+
+$ git clone https://github.com/teknofage/Camelot-Tinder
+
+Run the following commands:
+
+$ docker-compose up
+
+To save and close the container:
+
+$ docker-compose down
+
+
+
+
+#### Useful Links
+
+Live App: 
+
+http://camelot-fortune.dev.teknofage.com
+
+
+#### Developers
+
+Created by teknofage
+
