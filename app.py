@@ -39,11 +39,11 @@ def fortune_results():
     name = request.args.get('firstname')
 
     if users_preferred_drink == 'Beer':
-        fortune = "You'll grow a beer belly and stop shaving as often!"
+        fortune = "You will grow a beer belly and stop shaving as often!"
     elif users_preferred_drink == 'Wine':
-        fortune = "You'll tell the best stories but your head will hurt in the mornings!"
+        fortune = "You will tell the best stories but your head will hurt in the mornings!"
     elif users_preferred_drink == 'Mead':
-        fortune = "You'll braid your hair and wield an axe with competence!"
+        fortune = "You will braid your hair and wield an axe with competence!"
     elif users_preferred_drink == 'Elderflower Cordial':
         fortune = "Your senses will never be dull, unlike your speeches!"
     elif users_preferred_drink == 'Love Potion Number 9':
