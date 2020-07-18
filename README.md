@@ -7,8 +7,6 @@
 
 ![Docker Build Status](https://img.shields.io/docker/build/teknofage/camelot-fortune?style=for-the-badge)
 
-![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/teknofage/Camelot-Fortune?style=for-the-badge)
-
 ![Website](https://img.shields.io/website?down_color=light%20grey&down_message=offline&style=for-the-badge&up_color=green&up_message=online&url=https%3A%2F%2Fcamelot-fortune.dev.teknofage.com)
 
 ## Camelot Fortune is an API for nobles and commoners of Camelot and surrounding princedoms alike to learn their fortunes.
