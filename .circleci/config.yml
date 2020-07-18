@@ -1,21 +1,24 @@
 version: 2.1
-
-orbs:
-  python: circleci/python@0.2.1
-
 jobs:
-  build-and-test:
-    executor: python/default
+  run_tests:
+    docker:
+      - image: circleci/python:3.7.4
     steps:
       - checkout
-      - python/load-cache
-      - python/install-deps
-      - python/save-cache
       - run:
-          command: ./test_fortunes.py pytest
-          name: Test
-
+          name: Install Python Dependencies
+          command: |
+            echo 'export PATH=~$PATH:~/.local/bin' >> $BASH_ENV && source $BASH_ENV
+            pip install --user -r requirements.txt
+      - run:
+          name: Run unit tests
+          command: |
+            pytest --test_fortunexml=test-reports/test_fortune.xml --html=test-reports/pytest_report.html --self-contained-html
+      - store_test_results:
+          path: test-reports
+      - store_artifacts:
+          path: test-reports
 workflows:
-  main:
+  build_test:
     jobs:
-      - build-and-test
+      - run_tests
