@@ -4,7 +4,7 @@ services:
         build: .
         image: teknofage/camelot-fortune:1.0
         ports:
-            - "5050:5050"
+            - "5000:5000"
         volumes:
             - .:/code
         environment:
