@@ -1,12 +1,19 @@
-version: '2'
+version: '3.7'
 services:
     web:
         build: .
         ports:
-            - "5000:5000"
+            - "5050:5050"
         volumes:
             - .:/code
         depends_on:
             - redis
+        build: .
+        # The thing that changes the most often
+        command: flask run --host=0.0.0.0
     redis:
         image: redis
+
+
+        version: '3.7'
+
