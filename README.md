@@ -1,21 +1,28 @@
-What happens when you press the “submit” button? Paste the full URL you are sent to on submit.
+# Fortune Form
 
-When I press the submit button, it goes to this dead link: file:///fortune_results.php?firstname=William&favcolor=%23353dff&airspeed=African-or-European%21&title=Sorceror&knighted=2019-10-26&knight5=Odysseus&drink=Gorilla+Punch
+Fortune Form is an app for questing knights who want to meet new people
 
-What are the keys of this URL query string? How do they correspond to the “name” fields of your HTML form elements?
+## Installation
 
-The keys of this URL query string are firstname, favcolor, airspeed, title, knighted, knight5, and drink. 
-They correspond to the questions asked by the form, in order.
+Install Python, Flask, brew
 
+## Usage
 
-What are the values of the URL query string? How do they correspond to what the user entered or typed?
+```python
+import 
 
-The values or the URL query string are William, %23353dff&,  African-or-European, Sorceror, 2019-10-26, Odysseus, Gorilla+Punch.
+By entering multiple values as answers to the questions in the form, Fortune Form can deliver your personal fortune based on your personal details and answers.
 
-They correspond to the answers given by the user to each question: respectively, to the name entered, the favorite color, the chosen answer to the question about swallow airspeed, the title given, when they were knighted, their hero, and their chosen drink.
+HOMEWORK 3 DISCUSSION QUESTIONS
 
-Stretch challenge question:
+1. Describe the data contained in the API response. What can we discern about the weather in the specified city?
 
-Is there a way to pass multiple values through the URL query string for a single key? How can we do so?
+The data consists of a lot of small dictionaries containing key value pairs in the form of JSON data. We can discern from this data about San Francisco: the latitude and longitude, the description of the weather today (scattered clouds), the temperature, pressure, humidity, as well as information about the wind and sunrise and sunset times, and th time zone data.
 
-Yes. You need to use a Checkbox form element, which allows you to select more than one answer to a question, and therefore more than one value per key.
+2. How would we obtain the temperature in the specified city? Describe using Python dictionary syntax. (HINT: Assume that the JSON response is stored in a variable called json_response.)
+
+I wil use the requests.get function to send a GET request to the API. 
+
+import requests
+response=requests.get(response = requests.get("http://api.openweathermap.org/data/2.5/weather?q=San+Francisco&appid=2608f679d4594364525f6c6cc2246c79", params=parameters)
+)
