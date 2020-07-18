@@ -1,4 +1,4 @@
 {
     "schemaVersion": 2,
-    "dockerfilePath": "teknofage/camelot-fortune"
+    "templateId": "python-django/3.7"
    }
