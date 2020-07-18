@@ -2,18 +2,17 @@ version: '3.7'
 services:
     web:
         build: .
+        image: teknofage/camelot-fortune:1.0
         ports:
             - "5050:5050"
         volumes:
             - .:/code
-        depends_on:
-            - redis
+        environment:
+            - FLASK_ENV=development
         build: .
         # The thing that changes the most often
         command: flask run --host=0.0.0.0
-    redis:
-        image: redis
+        
 
 
-        version: '3.7'
 
