@@ -51,19 +51,37 @@ It's fun.
 
 #### Getting Started
 
-##Docker Installation instructions
+##Docker Installation Instructions
 
 Make sure you have Docker Hub installed and running on your machine.
 
-$ git clone https://github.com/teknofage/Camelot-Tinder
+```bash
+$ git clone https://github.com/teknofage/Camelot-Fortune.git
+```
 
 Run the following commands:
 
-$ docker-compose up
-
-To save and close the container:
-
-$ docker-compose down
+## Docker
+Make sure Docker is running
+### Build the image
+```bash
+docker build -t camelot-fortune .
+```
+### Build the container
+```bash
+docker run -p 5000:5000 camelot-fortune camelot-fortune
+```
+### To see what's running
+```bash
+docker ps
+```
+### Run
+```bash
+docker-compose up
+```
+### To stop, run
+```bash
+docker-compose down
 
 
 
