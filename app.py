@@ -35,7 +35,7 @@ def weather():
 def fortune_results():
     """Displays the user's fortune."""
     users_preferred_drink = request.args.get('drink')
-    title = request.args.get('title')
+    title = request.args.get('fortune_title')
     name = request.args.get('firstname')
 
     if users_preferred_drink == 'Beer':
