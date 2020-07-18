@@ -1,5 +1,5 @@
 <!-- Headings -->
-# **Reddit Clone**
+# **Camelot Fortune**
 
 ![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/teknofage/camelot-fortune?sort=date&style=for-the-badge)
 
